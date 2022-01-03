@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         String data = getDataFromEditText();
         if (data != null) {
             sharedPreferences.edit().putString("myData", data).apply();
-            Toast.makeText(this, "Podaci su uspešno sačuvani u SharedPreferencis u", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Podaci su uspešno sačuvani u SharedPreferencis na lokaciji", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
                 FileOutputStream fos = openFileOutput("myFile.txt", MODE_PRIVATE);
                 fos.write(data.getBytes());
-                Toast.makeText(this, "Podaci su uspešno sačuvani u internoj memoriji u ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Podaci su uspešno sačuvani u internoj memoriji na lokaciji", Toast.LENGTH_SHORT).show();
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
