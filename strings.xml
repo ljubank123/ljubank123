@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Datastorage_Nis</string>
+    <string name="text_1">Master strukovne sudije</string>
+    <string name="text_2">MULTIMEDIJALNE KOMUNIKACIONE TEHNOLOGIJE</string>
+    <string name="text_3">Predmet:Mobilni operativni sistemi</string>
+    <string name="text_4">PROJEKAT:</string>
+    <string name="text_5">Pamćenje podataka i datoteka kod Android OS</string>
+    <string name="text_6">Profesor:</string>
+    <string name="text_7">Mirko Kosanović</string>
+    <string name="text_8">Studenti:</string>
+    <string name="text_9">Oliver Arandjelović MKT 11/20</string>
+    <string name="text_10">Ljubomir Gogev MKT 14/20</string>
+    <string name="text_11">Niš,2021.</string>
+    <string name="text_12">Na ovom mestu mozete uneti proizvoljan broj karaktera velikih,malih slova,brojeva
+        i specijalnih karaktera i testirati unjihov unos i pamćenje na različitim mestima u
+         razlicite fajlove,foldere i storidze na Android OS-u.</string>
+    <string name="text_13">Ovde mozete izčitati ono što ste skladištili na predhodnoj strani na odredjenom mestu
+    na Android OS.</string>
+    <string name="text_14">Hvala što ste koristili našu aplikaciju za pamćenje i skladištenje podataka na Android OS-u.</string>
+
+</resources>
