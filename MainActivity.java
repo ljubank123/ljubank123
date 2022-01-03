@@ -1,4 +1,4 @@
-package com.example.shahzaib.datastorage_write__read_text_file_from_all_storage_options;
+package com.example.vtsnis.datastorage_write__read_text_file_from_all_storage_options;
 
 import android.Manifest;
 import android.content.Intent;
@@ -21,9 +21,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
 
     EditText editText;
 
@@ -49,15 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
             FileOutputStream fos = new FileOutputStream(file);
             fos.write(data.getBytes());
-            Toast.makeText(this, "Data Saved Successfully at: " + file.getAbsolutePath(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Podaci su uspešno sačuvani na lokaciji: " + file.getAbsolutePath(), Toast.LENGTH_LONG).show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-
-
-
 
 
     public void store_in_sharedPreferences(View view) {
@@ -65,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         String data = getDataFromEditText();
         if (data != null) {
             sharedPreferences.edit().putString("myData", data).apply();
-            Toast.makeText(this, "Saved in SharedPreferences Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Podaci su uspešno sačuvani u SharedPreferencis u", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -100,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
                 FileOutputStream fos = openFileOutput("myFile.txt", MODE_PRIVATE);
                 fos.write(data.getBytes());
-                Toast.makeText(this, "Data Successfully Save in internal Storage ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Podaci su uspešno sačuvani u internoj memoriji u ", Toast.LENGTH_SHORT).show();
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -125,14 +118,11 @@ public class MainActivity extends AppCompatActivity {
         String data = getDataFromEditText();
         if (data != null) {
 
-            // FIRST check state
-            if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) { // if media is available
-
-                // check for permisssion
+            if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) { 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED)
                     {
-//                        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+
                         File folder = Environment.getExternalStoragePublicDirectory("myFolder");
                         folder.mkdir();
                         File file = new File(folder.getAbsolutePath(), "myFile.txt");
@@ -144,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 else
-                { // if device is less then MarshMellow no need to request permission
+                { 
                     File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
                     File file = new File(folder, "myFile.txt");
                     saveData(file, data);
@@ -154,12 +144,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
-
-
-
-
 
     public void go_to_load_text_data_activity(View view)
     {
