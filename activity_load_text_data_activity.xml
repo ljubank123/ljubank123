@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:onClick="loadFrom_sharedPreferences"
         android:text="Load From SharedPreferences"
+        android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:onClick="loadFrom_internal_cache"
         android:text="Load From Internal Cache"
+        android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"
         android:onClick="loadFrom_external_cache"
         android:text="Load From External Cache"
+        android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
@@ -38,6 +41,7 @@
         android:layout_height="wrap_content"
         android:onClick="loadFrom_internal_storage"
         android:text="Load From Internal Storage"
+        android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
@@ -46,6 +50,7 @@
         android:layout_height="wrap_content"
         android:onClick="loadFrom_external_storage_private"
         android:text="Load From External Storage Private"
+        android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
@@ -54,6 +59,7 @@
         android:layout_height="wrap_content"
         android:onClick="loadFrom_external_storage_public"
         android:text="Load From External Storage Public"
+        android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
@@ -62,16 +68,54 @@
         android:layout_height="wrap_content"
         android:onClick="clearTV"
         android:text="Clear"
+        android:textColor="#22aa66"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go_to_store_text_data_activity"
+        android:text="Back to store"
+        android:textColor="#dd2222"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="go_to_home_activity"
+        android:text="HOME"
+        android:textColor="#4422ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="65dp"
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_13"
+        android:textColor="#aa0000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_14"
+        android:textColor="#aa0000"
+        android:textSize="16dp"
+        android:textStyle="italic" />
 
 
 </LinearLayout>
