@@ -1,5 +1,6 @@
 package com.example.vtsnis.datastorage_write__read_text_file_from_all_storage_options;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Environment;
 import android.support.design.widget.Snackbar;
@@ -17,7 +18,7 @@ import java.io.IOException;
 public class load_text_data_activity extends AppCompatActivity {
 
     TextView textView;
-    public static final String DEFAULT_VALUE = "nista nije uneto";
+    public static final String DEFAULT_VALUE = "Ništa nije upisano";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class load_text_data_activity extends AppCompatActivity {
                 data.append((char)read);
                 read = fin.read();
             }
-            Snackbar.make(textView,"Uspesno izcitani podaci",Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(textView,"Uspešno izčitani podaci",Snackbar.LENGTH_SHORT).show();
             return data.toString();
 
         } catch (IOException e) {
@@ -68,7 +69,7 @@ public class load_text_data_activity extends AppCompatActivity {
         textView.setText(data);
         if(!data.equals(DEFAULT_VALUE))
         {
-            Snackbar.make(textView,"Uspesno izcitani podaci",Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(textView,"Uspešno izčitani podaci",Snackbar.LENGTH_SHORT).show();
         }
     }
 
@@ -104,7 +105,7 @@ public class load_text_data_activity extends AppCompatActivity {
                 data.append((char)read);
                 read = fin.read();
             }
-            Snackbar.make(textView,"Uspesno izcitani podaci",Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(textView,"Uspešno izčitani podaci",Snackbar.LENGTH_SHORT).show();
             textView.setText(data.toString());
 
         } catch (IOException e) {
@@ -124,5 +125,16 @@ public class load_text_data_activity extends AppCompatActivity {
     {
         File file = Environment.getExternalStoragePublicDirectory("myFolder/myFile.txt");
         textView.setText(loadData(file));
+    }
+    public void go_to_store_text_data_activity(View view)
+    {
+        startActivity(new Intent(this,MainActivity.class));
+
+    }
+
+    public void go_to_home_activity(View view)
+    {
+        startActivity(new Intent(this,PrvaAktivnost.class));
+
     }
 }
