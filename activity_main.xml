@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="store_in_sharedPreferences"
-        android:text="Store In SharedPreferences"
+        android:text="Čuvanje u SharedPreferences"
         android:textColor="#4444ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="store_in_internal_cache"
-        android:text="Store In Internal Cache"
+        android:text="Čuvanje u Internal Cache"
         android:textColor="#4444ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="store_in_external_cache"
-        android:text="Store In External Cache"
+        android:text="Čuvanje u External Cache"
         android:textColor="#4444ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="store_in_internal_storage"
-        android:text="Store In Internal Storage"
+        android:text="Čuvanje u Internal Storage"
         android:textColor="#4444ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="store_in_external_storage_private"
-        android:text="Store In External Storage Private"
+        android:text="Čuvanje u  External Storage Private"
         android:textColor="#4444ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="store_in_external_storage_public"
-        android:text="Store In External Storage Public"
+        android:text="Čuvanje u External Storage Public"
         android:textColor="#4444ff"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -78,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="go_to_load_text_data_activity"
-        android:text="---->"
+        android:text="Prelaz na deo za čitanje"
         android:textColor="#dd2222"
         android:textAllCaps="false"
         android:textSize="20sp" />
