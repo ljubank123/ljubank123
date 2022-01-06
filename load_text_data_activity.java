@@ -46,7 +46,7 @@ public class load_text_data_activity extends AppCompatActivity {
                 data.append((char)read);
                 read = fin.read();
             }
-            Snackbar.make(textView,"Uspešno izčitani podaci",Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(textView,"Uspešno čitanje",Snackbar.LENGTH_SHORT).show();
             return data.toString();
 
         } catch (IOException e) {
@@ -69,7 +69,7 @@ public class load_text_data_activity extends AppCompatActivity {
         textView.setText(data);
         if(!data.equals(DEFAULT_VALUE))
         {
-            Snackbar.make(textView,"Uspešno izčitani podaci",Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(textView,"Uspešno čitanje",Snackbar.LENGTH_SHORT).show();
         }
     }
 
