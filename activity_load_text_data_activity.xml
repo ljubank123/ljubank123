@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="loadFrom_sharedPreferences"
-        android:text="Load From SharedPreferences"
+        android:text="Čitanje iz SharedPreferences"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="loadFrom_internal_cache"
-        android:text="Load From Internal Cache"
+        android:text="Čitanje iz Internal Cache"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="loadFrom_external_cache"
-        android:text="Load From External Cache"
+        android:text="Čitanje iz External Cache"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="loadFrom_internal_storage"
-        android:text="Load From Internal Storage"
+        android:text="Čitanje iz Internal Storage"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="loadFrom_external_storage_private"
-        android:text="Load From External Storage Private"
+        android:text="Čitanje iz External Storage Private"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="loadFrom_external_storage_public"
-        android:text="Load From External Storage Public"
+        android:text="Čitanje iz External Storage Public"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -67,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="clearTV"
-        android:text="Clear"
+        android:text="Očisti"
         android:textColor="#22aa66"
         android:textAllCaps="false"
         android:textSize="20sp" />
@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="go_to_store_text_data_activity"
-        android:text="Back to store"
+        android:text="Povratak na deo za upis"
         android:textColor="#dd2222"
         android:textAllCaps="false"
         android:textSize="20sp" />
